@@ -4,4 +4,9 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="welcome">Welcome,</string>
+    <string name="about_version">Version</string>
+    <string name="about_year">Year</string>
+    <string name="about_ratingBar">Rating</string>
+    <string name="about_application">Application</string>
+    <string name="about_name">Quiz App</string>
 </resources>

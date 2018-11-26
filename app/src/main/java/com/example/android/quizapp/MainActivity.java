@@ -11,6 +11,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button loginButton;
+    private Button aboutButton;
     private EditText usernameField;
     private EditText passwordField;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button)findViewById(R.id.login_button);
+        aboutButton = (Button)findViewById(R.id.about_button);
         usernameField = (EditText)findViewById(R.id.username_field);
         passwordField = (EditText)findViewById(R.id.password_field);
 
@@ -36,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent new_activity = new Intent(MainActivity.this, StudentActivity.class);
                 new_activity.putExtra("loggedUser", loggedUser);
                 MainActivity.this.startActivity(new_activity);
+            }
+        });
+
+        aboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         });
 

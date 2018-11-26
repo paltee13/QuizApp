@@ -7,6 +7,9 @@
     <string name="about_version">Version</string>
     <string name="about_year">Year</string>
     <string name="about_ratingBar">Rating</string>
-    <string name="about_application">Application</string>
+    <string name="about_names">Tanase Andrei, Andrei Paltineanu</string>
     <string name="about_name">Quiz App</string>
+    <string name="about_version_number">1.0</string>
+    <string name="about_year_date">2018</string>
+    <string name="about_button">About</string>
 </resources>

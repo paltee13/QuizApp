@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.android.quizapp.model.Catalog;
+
 import java.util.List;
 
 public class CatalogActivity extends AppCompatActivity {

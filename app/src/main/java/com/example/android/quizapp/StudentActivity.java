@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.android.quizapp.model.User;
+
 public class StudentActivity extends AppCompatActivity {
 
     private TextView welcomeText;

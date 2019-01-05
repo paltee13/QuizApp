@@ -3,6 +3,7 @@ package com.example.android.quizapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -26,7 +27,15 @@ public class ProfessorActivity extends AppCompatActivity {
         Intent i = getIntent();
         final User loggedUser = (User)i.getSerializableExtra("loggedUser");
 
-        welcomeText.setText(getString(R.string.welcome) + loggedUser.getUserName());
+        welcomeText.setText(getString(R.string.welcome) + ", " + loggedUser.getUserName());
 
+        createTestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent new_activity = new Intent(ProfessorActivity.this, CreateTestActivity.class);
+                new_activity.putExtra("logged", loggedUser);
+                ProfessorActivity.this.startActivity(new_activity);
+            }
+        });
     }
 }

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.quizapp">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +24,11 @@
         <activity android:name=".CreateTestActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".SuccessActivity" />
-        <activity android:name=".CatalogActivity"></activity>
+        <activity android:name=".CatalogActivity" />
+        <activity android:name=".SearchStudActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".TestFinishActivity" />
+        <activity android:name=".TestPickerActivity"></activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
 </manifest>

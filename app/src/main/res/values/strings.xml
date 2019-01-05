@@ -12,4 +12,11 @@
     <string name="about_version_number">1.0</string>
     <string name="about_year_date">2018</string>
     <string name="about_button">About</string>
+    <string name="pct_obt">Puncte acumulate:</string>
+    <string name="student_list">STUDENT LIST</string>
+    <string name="insert_question">Insert Question</string>
+    <string name="add_answer">Add Answer</string>
+    <string name="multiple_correct">Multiple correct?</string>
+    <string name="insert_answer">Insert Answer</string>
+    <string name="correct_answer">Correct Answer</string>
 </resources>
